@@ -20,16 +20,56 @@ p, ul, li
 	.containerInner
 		padding: 0 16px
 
-.header
+.header, .footer
 	background-color: $accent
 	padding: 10px 0 23px
 	.containerInner
 		display: flex
 		justify-content: space-between
 		
+.header
+	img
+		width: 70px
+	.containerInner
+		position: relative
+		.navigation
+			list-style: none
+			position: absolute
+			top: -3px
+			right: 44px
+			li
+				cursor: pointer
+				padding: 3px
+				transition: background-color .3s ease-in-out
+				&:hover
+					background-color: #5ABAFF
+				a
+					text-decoration: none
+					color: #fff
+					font-family: 'monsterrat'
+					font-weight: 600
+		.hamburgerWrapper
+			cursor: pointer
+			margin-top: 5px
+			.hamburger
+				width: 16px
+				height: 1px
+				background-color: #fff
+				&:before, &:after
+					content: ''
+					display: block
+					width: 16px
+					height: 1px
+					background-color: #fff
+					position: relative
+					top: -6px
+				&:after
+					top: inherit
+					bottom: -5px
+				
 .MainSection
 	background-color: #fff
-	padding: 6px 0
+	padding: 6px 0 90px
 	p
 		margin-bottom: 10px
 		&.withImg
@@ -66,11 +106,93 @@ p, ul, li
 			width: 286px
 			height: 199px
 	.mayBring
-		ul
+		ul.dis
 			list-style: none
 			margin-bottom: 10px
 			li
 				text-indent: 5px
+		img.theme
+			width: 287px
+			height: 131px
+		ul.results
+			list-style: none
+			margin-bottom: 10px
+			li
+				margin-left: 5px
+	.want
+		margin-top: 5px
+		h2
+			font-size: 10px
+			font-family: monsterrat
+			font-weight: 600
+			text-align: left
+			margin-bottom: 0
+		img
+			width: 212px
+			height: 126px
+	.secret
+		margin-top: 20px
+		h2
+			margin-bottom: 0
+		img.doctor
+			width: 249px
+			height: 137px
+	.order
+		span
+			font-family: monsterrat
+			font-weight: 700
+		ul
+			list-style: none
+		.grany
+			width: 289px
+			height: 193px
+			
+.footer
+	padding: 0 0 79px
+	.containerInner
+		.leftSide
+			display: flex
+			flex-direction: column
+			align-items: center 
+			.logo
+				height: 75px
+				width: 104px
+			.sotials
+				margin-top: 20px
+				display: flex
+				a
+					margin-right: 7px
+					&:last-child
+						margin-right: 0
+					img
+						width: 14px
+						height: 14px
+		.rightSide
+			margin-top: 10px
+			margin-left: auto
+			display: flex
+			.ABC
+				width: 76px
+				margin-right: 15px
+				div
+					color: $textcolor
+					text-decoration: none
+					span
+						margin-bottom: 10px
+						display: block
+			.observatory
+				width: 72px
+				a
+					color: $textcolor
+					text-decoration: none
+			
+		
+		
+			
+				
+	
+				
+			
 		
 		
 		
